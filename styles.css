@@ -1,0 +1,66 @@
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      min-width: 220px;
+      background-color: #333;
+      min-height: 100vh;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .menu > li {
+      position: relative;
+    }
+
+    .menu > li > a {
+      display: block;
+      padding: 14px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #444;
+    }
+
+    .menu > li > a:hover {
+      background-color: #555;
+    }
+
+    .submenu {
+      display: none;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background-color: #444;
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 12px 30px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #555;
+    }
+
+    .submenu li a:hover {
+      background-color: #666;
+    }
+
+    /* Hover activeert submenu */
+    .menu li:hover .submenu {
+      display: block;
+    }
+
+    .content {
+      padding: 20px;
+      flex-grow: 1;
+      display:none;
+    }
